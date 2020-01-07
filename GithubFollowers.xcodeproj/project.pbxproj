@@ -24,6 +24,7 @@
 		CB4816ED23BCC91900745FEB /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4816EC23BCC91900745FEB /* GFBodyLabel.swift */; };
 		CB4816EF23BCCA0500745FEB /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4816EE23BCCA0500745FEB /* GFAlertVC.swift */; };
 		CB4816F123BCD3E400745FEB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4816F023BCD3E400745FEB /* UIViewControllerExtension.swift */; };
+		CB9C1BEE23C521FE006D7E15 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C1BED23C521FE006D7E15 /* UIHelper.swift */; };
 		CBAF93A723C27BE300D36665 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF93A623C27BE300D36665 /* FollowerCell.swift */; };
 		CBAF93A923C27D4F00D36665 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF93A823C27D4F00D36665 /* GFAvatarImageView.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		CB4816EC23BCC91900745FEB /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		CB4816EE23BCCA0500745FEB /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		CB4816F023BCD3E400745FEB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CB9C1BED23C521FE006D7E15 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		CBAF93A623C27BE300D36665 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		CBAF93A823C27D4F00D36665 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				CB1CF25223C0D2160044C189 /* ErrorMessage.swift */,
+				CB9C1BED23C521FE006D7E15 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				CB4816E923BCA22900745FEB /* FollowersListVC.swift in Sources */,
 				3B76904023BA46D700768742 /* FavoritesListVC.swift in Sources */,
 				3B76904223BB43DB00768742 /* GFButton.swift in Sources */,
+				CB9C1BEE23C521FE006D7E15 /* UIHelper.swift in Sources */,
 				CBAF93A923C27D4F00D36665 /* GFAvatarImageView.swift in Sources */,
 				CB4816EF23BCCA0500745FEB /* GFAlertVC.swift in Sources */,
 				CB4816ED23BCC91900745FEB /* GFBodyLabel.swift in Sources */,

@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct Follower: Codable {
+struct Follower: Codable, Hashable {
     var login: String
     var avatarUrl: String
+    
+    // This function has to be implemented when there are properties that aren't hashable (like String).
+//    func hash(into hasher: inout Hasher) {
+//        hasher.combine(login)
+//    }
 }
