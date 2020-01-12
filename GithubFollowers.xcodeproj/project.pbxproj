@@ -17,8 +17,9 @@
 		3B76904423BB46BF00768742 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76904323BB46BF00768742 /* GFTextField.swift */; };
 		3BC7098123BDCF9800E30DF1 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7098023BDCF9800E30DF1 /* Follower.swift */; };
 		3BC7098323BDD05A00E30DF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7098223BDD05A00E30DF1 /* User.swift */; };
+		CB13DB9F23CB5629007F10E5 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13DB9E23CB5629007F10E5 /* UserInfoVC.swift */; };
+		CB13DBA123CB7769007F10E5 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13DBA023CB7769007F10E5 /* GFError.swift */; };
 		CB1CF25023C0BF5D0044C189 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CF24F23C0BF5D0044C189 /* NetworkManager.swift */; };
-		CB1CF25323C0D2160044C189 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CF25223C0D2160044C189 /* ErrorMessage.swift */; };
 		CB4816E923BCA22900745FEB /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4816E823BCA22900745FEB /* FollowersListVC.swift */; };
 		CB4816EB23BCC71900745FEB /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4816EA23BCC71900745FEB /* GFTitleLabel.swift */; };
 		CB4816ED23BCC91900745FEB /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4816EC23BCC91900745FEB /* GFBodyLabel.swift */; };
@@ -42,8 +43,9 @@
 		3B76904323BB46BF00768742 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		3BC7098023BDCF9800E30DF1 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		3BC7098223BDD05A00E30DF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB13DB9E23CB5629007F10E5 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		CB13DBA023CB7769007F10E5 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		CB1CF24F23C0BF5D0044C189 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		CB1CF25223C0D2160044C189 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		CB4816E823BCA22900745FEB /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
 		CB4816EA23BCC71900745FEB /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		CB4816EC23BCC91900745FEB /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
@@ -116,8 +118,8 @@
 		CB1CF25123C0D2080044C189 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CB1CF25223C0D2160044C189 /* ErrorMessage.swift */,
 				CB9C1BED23C521FE006D7E15 /* UIHelper.swift */,
+				CB13DBA023CB7769007F10E5 /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 				3B76903F23BA46D700768742 /* FavoritesListVC.swift */,
 				3B76903D23BA468400768742 /* SearchVC.swift */,
 				CB4816E823BCA22900745FEB /* FollowersListVC.swift */,
+				CB13DB9E23CB5629007F10E5 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -253,9 +256,10 @@
 				CB4816EF23BCCA0500745FEB /* GFAlertVC.swift in Sources */,
 				CB4816ED23BCC91900745FEB /* GFBodyLabel.swift in Sources */,
 				CBAF93A723C27BE300D36665 /* FollowerCell.swift in Sources */,
-				CB1CF25323C0D2160044C189 /* ErrorMessage.swift in Sources */,
+				CB13DBA123CB7769007F10E5 /* GFError.swift in Sources */,
 				CB4816EB23BCC71900745FEB /* GFTitleLabel.swift in Sources */,
 				3BC7098123BDCF9800E30DF1 /* Follower.swift in Sources */,
+				CB13DB9F23CB5629007F10E5 /* UserInfoVC.swift in Sources */,
 				3B76903E23BA468400768742 /* SearchVC.swift in Sources */,
 				CB1CF25023C0BF5D0044C189 /* NetworkManager.swift in Sources */,
 				3B76902A23BA407D00768742 /* AppDelegate.swift in Sources */,

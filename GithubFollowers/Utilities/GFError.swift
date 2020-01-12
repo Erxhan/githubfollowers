@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GithubFollowers
 //
-//  Created by Erxhan Selmani on 04/01/2020.
+//  Created by Erxhan Selmani on 12/01/2020.
 //  Copyright © 2020 Exrhan Selmani. All rights reserved.
 //
 
