@@ -17,7 +17,7 @@ class UserInfoVC: UIViewController {
     var itemViews: [UIView] = []
     
     var username: String!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -26,7 +26,7 @@ class UserInfoVC: UIViewController {
     }
     
     func configureViewController() {
-       view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBackground
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButton
     }
@@ -38,7 +38,9 @@ class UserInfoVC: UIViewController {
             switch result {
             case .success(let user):
                 DispatchQueue.main.async {
-                 self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: GFRepoItemVC(user: user), to: self.itemViewOne)
+                    self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
                 }
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
@@ -83,5 +85,5 @@ class UserInfoVC: UIViewController {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
+    
 }
