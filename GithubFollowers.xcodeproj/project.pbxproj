@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6CCD2523DEBF0D00EFDF05 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CCD2423DEBF0D00EFDF05 /* DateExtension.swift */; };
+		3B6CCD2723DEBF4000EFDF05 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CCD2623DEBF4000EFDF05 /* StringExtension.swift */; };
 		3B76902A23BA407D00768742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76902923BA407D00768742 /* AppDelegate.swift */; };
 		3B76902C23BA407D00768742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76902B23BA407D00768742 /* SceneDelegate.swift */; };
 		3B76903323BA407F00768742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B76903223BA407F00768742 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6CCD2423DEBF0D00EFDF05 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		3B6CCD2623DEBF4000EFDF05 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3B76902623BA407D00768742 /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B76902923BA407D00768742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B76902B23BA407D00768742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				CB4816F023BCD3E400745FEB /* UIViewControllerExtension.swift */,
+				3B6CCD2423DEBF0D00EFDF05 /* DateExtension.swift */,
+				3B6CCD2623DEBF4000EFDF05 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6CCD2523DEBF0D00EFDF05 /* DateExtension.swift in Sources */,
 				CBC2CA4823DE421100DD42BD /* GFFollowerItemVC.swift in Sources */,
 				3BC7098323BDD05A00E30DF1 /* User.swift in Sources */,
 				CB71039D23DCF9DC000B09AD /* Constants.swift in Sources */,
@@ -330,6 +337,7 @@
 				3B76904423BB46BF00768742 /* GFTextField.swift in Sources */,
 				CB4816E923BCA22900745FEB /* FollowersListVC.swift in Sources */,
 				3B76904023BA46D700768742 /* FavoritesListVC.swift in Sources */,
+				3B6CCD2723DEBF4000EFDF05 /* StringExtension.swift in Sources */,
 				CBC2CA4423DE3C9200DD42BD /* GFItemInfoVC.swift in Sources */,
 				CBC2CA4623DE3FC600DD42BD /* GFRepoItemVC.swift in Sources */,
 				3B76904223BB43DB00768742 /* GFButton.swift in Sources */,
