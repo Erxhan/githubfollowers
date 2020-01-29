@@ -12,7 +12,7 @@ enum PersistenceActionType {
     case add, remove
 }
 
-enum PeristenceManager {
+enum PersistenceManager {
     
     static private let defaults = UserDefaults.standard
     
@@ -35,7 +35,7 @@ enum PeristenceManager {
                 case .remove:
                     retrievedFavorites.removeAll { $0.login == favorite.login }
                 }
-                completed(save(favorites: favorites))
+                completed(save(favorites: retrievedFavorites))
             case .failure(let error):
                 completed(error)
             }
