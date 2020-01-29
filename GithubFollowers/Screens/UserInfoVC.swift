@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol UserInfoVCDelegate: class {
-    func didTapGithubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
-}
+//protocol UserInfoVCDelegate: class {
+//    func didTapGithubProfile(for user: User)
+//    func didTapGetFollowers(for user: User)
+//}
 
 class UserInfoVC: UIViewController {
     
@@ -56,15 +56,8 @@ class UserInfoVC: UIViewController {
     
     
     func configureUIElements(with user: User) {
-        let repoItemVC = GFRepoItemVC(user: user)
-        repoItemVC.delegate = self
-        
-        let followerItemVC = GFFollowerItemVC(user: user)
-        followerItemVC.delegate = self
-        
-        
-        self.add(childVC: repoItemVC, to: self.itemViewOne)
-        self.add(childVC: followerItemVC, to: self.itemViewTwo)
+        self.add(childVC: GFRepoItemVC(user: user, delegate: self), to: self.itemViewOne)
+        self.add(childVC: GFFollowerItemVC(user: user, delegate: self), to: self.itemViewTwo)
         self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
         self.dateLabel.text = "Github since \(user.createdAt.convertToDisplayFormat())"
     }
@@ -115,27 +108,28 @@ class UserInfoVC: UIViewController {
 }
 
 
-
-extension UserInfoVC: UserInfoVCDelegate {
-    func didTapGithubProfile(for user: User) {
+extension UserInfoVC: GithubProfileTappable {
+    func didTapGithubProfile(of user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid.", buttonTitle: "Ok")
             return
         }
         presentSafariVC(with: url)
+    }
+    
+    
+}
+
+extension UserInfoVC: GithubFollowersTappable {
+    func didTapGithubFollowers(of user: User) {
+        let followersVC = FollowersListVC(username: user.login)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+        followersVC.navigationItem.rightBarButtonItem = doneButton
+        followersVC.title = user.login
         
+        let navController = UINavigationController(rootViewController: followersVC)
+        present(navController, animated: true)
     }
-    
-    func didTapGetFollowers(for user: User) {
-        guard user.followers != 0 else {
-            presentGFAlertOnMainThread(title: "No followers!", message: "This user has no followers. What a shame... 😞", buttonTitle: "So sad")
-            return
-        }
-        delegate.didRequestFollowers(for: user.login)
-        dismissVC()
-    }
-    
-    
     
     
 }
