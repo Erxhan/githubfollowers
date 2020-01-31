@@ -40,6 +40,7 @@
 		CBC2CA4423DE3C9200DD42BD /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2CA4323DE3C9200DD42BD /* GFItemInfoVC.swift */; };
 		CBC2CA4623DE3FC600DD42BD /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2CA4523DE3FC600DD42BD /* GFRepoItemVC.swift */; };
 		CBC2CA4823DE421100DD42BD /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2CA4723DE421100DD42BD /* GFFollowerItemVC.swift */; };
+		CBE8F12B23E44867000BFC7E /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE8F12A23E44867000BFC7E /* GFTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		CBC2CA4323DE3C9200DD42BD /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 		CBC2CA4523DE3FC600DD42BD /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
 		CBC2CA4723DE421100DD42BD /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
+		CBE8F12A23E44867000BFC7E /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 		CB8D763B23BCF3E500ED2627 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				CBE8F12923E44834000BFC7E /* TabBarControllers */,
 				CB71039723DCF189000B09AD /* ViewControllers */,
 				CB71039623DCF17F000B09AD /* ImageViews */,
 				CB71039523DCF17A000B09AD /* Views */,
@@ -266,6 +269,14 @@
 				CBC2CA4723DE421100DD42BD /* GFFollowerItemVC.swift */,
 			);
 			path = ItemInfoVCs;
+			sourceTree = "<group>";
+		};
+		CBE8F12923E44834000BFC7E /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBE8F12A23E44867000BFC7E /* GFTabBarController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				CB71039923DCF1CC000B09AD /* GFUserInfoHeaderVC.swift in Sources */,
 				CB9C1BEE23C521FE006D7E15 /* UIHelper.swift in Sources */,
 				CB71039B23DCF23D000B09AD /* GFSecondaryTitleLabel.swift in Sources */,
+				CBE8F12B23E44867000BFC7E /* GFTabBarController.swift in Sources */,
 				CBAF93A923C27D4F00D36665 /* GFAvatarImageView.swift in Sources */,
 				CB4816EF23BCCA0500745FEB /* GFAlertVC.swift in Sources */,
 				CB4816ED23BCC91900745FEB /* GFBodyLabel.swift in Sources */,
