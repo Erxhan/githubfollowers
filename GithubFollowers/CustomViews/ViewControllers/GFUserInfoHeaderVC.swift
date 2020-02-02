@@ -37,12 +37,12 @@ class GFUserInfoHeaderVC: UIViewController {
     
     func configureUIElements() {
         downloadAvatarImage()
-        usernameLabel.text = user.login
-        nameLabel.text = user.name ?? ""
-        locationLabel.text = user.location ?? "No Location"
-        bioLabel.text = user.bio ?? "No bio available"
-        bioLabel.numberOfLines = 3
-        locationImageView.image = UIImage(systemName: SFSymbols.location)
+        usernameLabel.text          = user.login
+        nameLabel.text              = user.name ?? ""
+        locationLabel.text          = user.location ?? "No Location"
+        bioLabel.text               = user.bio ?? "No bio available"
+        bioLabel.numberOfLines      = 3
+        locationImageView.image     = SFSymbols.location
         locationImageView.tintColor = .secondaryLabel
     }
     
