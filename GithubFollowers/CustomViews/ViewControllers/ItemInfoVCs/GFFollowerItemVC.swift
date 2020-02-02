@@ -17,8 +17,8 @@ class GFFollowerItemVC: GFItemInfoVC {
     weak var delegate: GithubFollowersTappable?
     
     init(user: User, delegate: GithubFollowersTappable? = nil) {
-        self.delegate = delegate
         super.init(user: user)
+        self.delegate = delegate
     }
     
     required init?(coder: NSCoder) {

@@ -17,8 +17,8 @@ class GFRepoItemVC: GFItemInfoVC {
     weak var delegate: GithubProfileTappable?
     
     init(user: User, delegate: GithubProfileTappable? = nil) {
-        self.delegate = delegate
         super.init(user: user)
+        self.delegate = delegate
     }
     
     required init?(coder: NSCoder) {
