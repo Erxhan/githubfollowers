@@ -21,16 +21,16 @@ class GFSecondaryTitleLabel: UILabel {
     
     convenience init(fontSize: CGFloat) {
         self.init(frame: .zero)
-        font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
+        font                                        = UIFont.systemFont(ofSize: fontSize, weight: .medium)
     }
     
     private func configure() {
-        textColor = .secondaryLabel
-        font = UIFont.preferredFont(forTextStyle: .body)
-        adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.90
-        lineBreakMode = .byTruncatingTail
-        translatesAutoresizingMaskIntoConstraints = false
+        textColor                                   = .secondaryLabel
+        font                                        = UIFont.preferredFont(forTextStyle: .body)
+        adjustsFontSizeToFitWidth                   = true
+        minimumScaleFactor                          = 0.90
+        lineBreakMode                               = .byTruncatingTail
+        translatesAutoresizingMaskIntoConstraints   = false
     }
 
 }

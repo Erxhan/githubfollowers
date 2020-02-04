@@ -39,9 +39,9 @@ class UserInfoVC: GFDataLoadingVC {
     
     
     func configureViewController() {
-        view.backgroundColor = .systemBackground
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
-        navigationItem.rightBarButtonItem = doneButton
+        view.backgroundColor                = .systemBackground
+        let doneButton                      = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+        navigationItem.rightBarButtonItem   = doneButton
     }
     
     func configureScrollView() {
@@ -80,10 +80,10 @@ class UserInfoVC: GFDataLoadingVC {
     
     
     func layoutUI() {
-        let padding: CGFloat = 20
+        let padding: CGFloat    = 20
         let itemHeight: CGFloat = 140
         
-        itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
+        itemViews               = [headerView, itemViewOne, itemViewTwo, dateLabel]
         
         for itemView in itemViews {
             contentView.addSubview(itemView)

@@ -9,6 +9,7 @@
 import UIKit
 
 class NetworkManager {
+    
     static let shared = NetworkManager()
     
     private let baseUrl = "https://api.github.com/users/"
@@ -19,6 +20,7 @@ class NetworkManager {
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GFError>) -> Void) {
         let endpoint = baseUrl + "\(username)/followers?per_page=100&page=\(page)"
+        
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidUsername))
             return
@@ -55,6 +57,7 @@ class NetworkManager {
     
     func getUserInfo(for username: String, completed: @escaping (Result<User, GFError>) -> Void) {
         let endpoint = baseUrl + "\(username)"
+        
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidUsername))
             return
@@ -89,6 +92,7 @@ class NetworkManager {
         task.resume()
     }
     
+    
     func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
         let cacheKey = NSString(string: urlString)
         
@@ -116,7 +120,4 @@ class NetworkManager {
         }
         task.resume()
     }
-    
-    
-    
 }

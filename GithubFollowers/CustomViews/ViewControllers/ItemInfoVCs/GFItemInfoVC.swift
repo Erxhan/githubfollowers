@@ -10,10 +10,10 @@ import UIKit
 
 class GFItemInfoVC: UIViewController {
     
-    let stackView = UIStackView()
-    let itemInfoViewOne = GFItemInfoView()
-    let itemInfoViewTwo = GFItemInfoView()
-    let actionButton = GFButton()
+    let stackView           = UIStackView()
+    let itemInfoViewOne     = GFItemInfoView()
+    let itemInfoViewTwo     = GFItemInfoView()
+    let actionButton        = GFButton()
     
     var user: User!
     
@@ -40,8 +40,8 @@ class GFItemInfoVC: UIViewController {
     }
     
     private func configureStackView() {
-        stackView.axis = .horizontal
-        stackView.distribution = .equalSpacing
+        stackView.axis          = .horizontal
+        stackView.distribution  = .equalSpacing
         
         stackView.addArrangedSubview(itemInfoViewOne)
         stackView.addArrangedSubview(itemInfoViewTwo)
@@ -59,7 +59,7 @@ class GFItemInfoVC: UIViewController {
         view.addSubviews(stackView, actionButton)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        let padding: CGFloat = 20
+        let padding: CGFloat                                = 20
         
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: padding),

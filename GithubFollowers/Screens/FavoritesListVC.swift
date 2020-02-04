@@ -45,18 +45,22 @@ class FavoritesListVC: GFDataLoadingVC {
             guard let self = self else { return }
             switch result {
             case .success(let favorites):
-                if (favorites.isEmpty) {
-                    self.showEmptyState(with: "No favorites?\nAdd one on the follower screen.", in: self.view)
-                } else {
-                    self.favorites = favorites
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                        self.view.bringSubviewToFront(self.tableView)
-                    }
-                }
+                self.updateUI(with: favorites)
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
                 break
+            }
+        }
+    }
+    
+    func updateUI(with favorites: [Follower]) {
+        if (favorites.isEmpty) {
+            self.showEmptyState(with: "No favorites?\nAdd one on the follower screen.", in: self.view)
+        } else {
+            self.favorites = favorites
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.view.bringSubviewToFront(self.tableView)
             }
         }
     }
@@ -75,8 +79,8 @@ extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let favorite = favorites[indexPath.row]
-        let destinationVC = FollowersListVC(username: favorite.login)
+        let favorite        = favorites[indexPath.row]
+        let destinationVC   = FollowersListVC(username: favorite.login)
         destinationVC.title = favorite.login
         navigationController?.pushViewController(destinationVC, animated: true)
     }
